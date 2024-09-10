@@ -52,7 +52,7 @@ describe('GameScreen', () => {
     jest.useFakeTimers();
 
     // Fast-forward timers to trigger game over
-    jest.advanceTimersByTime(20000); // Simulate 20 seconds to deplete fuel
+    jest.advanceTimersByTime(20000); 
 
     // Check game over screen
     expect(await screen.findByText(/Game Over/)).toBeInTheDocument();
