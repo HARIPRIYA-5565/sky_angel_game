@@ -46,7 +46,10 @@ body {
 .aircraft {
     position: absolute;
     bottom: 100px;
-    left: 100px;
+    right: 50%;
+    /* Centers the aircraft horizontally */
+    transform: translateX(-50%);
+    /* Adjusts to the center considering the width of the element */
     width: 100px;
     animation: fly 3s linear infinite;
 }
@@ -351,7 +354,8 @@ body {
 
 /* Desktop and larger screens */
 
-@media (min-width: 1024px) {
+
+/* @media (min-width: 1024px) {
     .game-screen {
         position: absolute;
         width: 1024px;
@@ -362,7 +366,15 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-}
+    .aircraft {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        animation: fly 3s linear infinite;
+    }
+} */
 
 
 /* Small screens */
