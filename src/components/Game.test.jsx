@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom'; 
 import GameScreen from './GameScreen';
 import axios from 'axios';
 
@@ -117,3 +117,4 @@ describe('GameScreen', () => {
     expect(screen.getByText(/120/)).toBeInTheDocument();
   });
 });
+
